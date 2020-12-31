@@ -1,0 +1,357 @@
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top,  rgba(252, 0, 126, 0.486), rgba(243, 169, 203, 0.26)), url("images/pic3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    font-size: 60px;
+    letter-spacing: 10px;
+    text-shadow: 3px 5px 1px white;
+    text-transform: uppercase;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 12px;
+    animation-name: colorful;
+    animation-duration: 300ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorful{
+    0% {
+        color: rgb(255, 0, 0);
+      }
+      50% {
+        color: yellow;
+      }
+      100% {
+        color: rgb(255, 0, 0);
+      }
+}
+
+#name {
+    font-size: 40px;
+    color:  #fbfafb;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-shadow: 5px 8px 5px #e100f18f;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+#senderName {
+    width: 30%;
+    font-size: 24px;
+    padding: 8px;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 8px;
+    border: none;
+    margin: 12px 8px;
+    color: #ff5b5b;
+  }
+
+#senderName:focus {
+    outline: none;
+  }
+
+.cat-container {
+    text-align: right;
+}
+
+.close-dialog {
+    display: inline;
+    font-size: 32px;
+    position: fixed;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 4px #ec3838;
+    margin: 32px;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.contact-us-link {
+    text-decoration: none;
+}
+
+.cute-cat {
+    width: 100px;
+    height: auto;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    text-align: center;
+} 
+
+.message {
+    font-size: 32px;
+    /* color: #fbfafb;
+    text-shadow: 5px 8px 5px #e100f18f; */
+    color: white;
+    text-shadow: 5px 8px 8px #ffef46ed;
+    line-height: 1.3;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0px;
+    text-align: left;
+    animation-name: fade-out;
+    animation-duration: 6s;
+}
+.message::first-line {
+    text-indent: 15%;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.message-box {
+    width: 44%;
+    min-height: 300px;
+    height: auto;
+    background-color: #f17fb140;
+    margin-left: auto;
+    margin-right: auto;
+    border: 30px ridge rgba(255, 0, 10, .86);
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 60px;
+    padding: 32px;
+}
+
+.my-wish {
+    display: block;
+    text-align:  right;
+}
+
+.send-button {
+    opacity: 0;
+    background: #d119bc;
+    background-image: -webkit-linear-gradient(top, #d119bc, #b82b2d);
+    background-image: -moz-linear-gradient(top, #d119bc, #b82b2d);
+    background-image: -ms-linear-gradient(top, #d119bc, #b82b2d);
+    background-image: -o-linear-gradient(top, #d119bc, #b82b2d);
+    background-image: linear-gradient(to bottom, #d119bc, #b82b2d);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    outline: none;
+  }
+  
+  .send-button:hover {
+    background: #fa3737;
+    background-image: -webkit-linear-gradient(top, #fa3737, #d9349a);
+    background-image: -moz-linear-gradient(top, #fa3737, #d9349a);
+    background-image: -ms-linear-gradient(top, #fa3737, #d9349a);
+    background-image: -o-linear-gradient(top, #fa3737, #d9349a);
+    background-image: linear-gradient(to bottom, #fa3737, #d9349a);
+    text-decoration: none;
+  }
+
+.send-via-box {
+    display: flex;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.send-via-text {
+    display: inline;
+    margin: 0;
+    padding-top: 18px;
+    padding-right: 10px;
+    text-shadow: 2px 2px 3px #ec3838;
+}
+
+.sender-name {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 4px #ec3838;
+}
+
+.share-buttons img {
+    width: 40px;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0;
+    display: inline;
+    filter:drop-shadow(-1px 8px 4px #fd2525b5);
+    }
+
+.share-dialog-box-container {
+    display: none;
+    /* display: flex; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9916ee3;
+}
+
+.share-dialog-box {
+    width: 60%;
+    padding: 60px 2px;
+    background-color: #ff5b5b;
+    box-shadow: -3px 11px 12px -6px #7f2424;
+}
+
+.signature {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    position: relative;
+    top: 22px;
+}
+
+.signature p {
+    font-size: 16px;
+    color:rgba(241, 225, 225, 0.654);
+}
+
+.submit {
+    background: #ff5b5b;
+    background-image: -webkit-linear-gradient(top, #ff5b5b, #e32222);
+    background-image: -moz-linear-gradient(top, #ff5b5b, #e32222);
+    background-image: -ms-linear-gradient(top, #ff5b5b, #e32222);
+    background-image: -o-linear-gradient(top, #ff5b5b, #e32222);
+    background-image: linear-gradient(to bottom, #ff5b5b, #e32222);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    outline: none;
+    border-color: white;
+  }
+  
+  .submit:hover {
+    background: #f52c2c;
+    background-image: -webkit-linear-gradient(top, #f52c2c, #ff5b5b);
+    background-image: -moz-linear-gradient(top, #f52c2c, #ff5b5b);
+    background-image: -ms-linear-gradient(top, #f52c2c, #ff5b5b);
+    background-image: -o-linear-gradient(top, #f52c2c, #ff5b5b);
+    background-image: linear-gradient(to bottom, #f52c2c, #ff5b5b);
+    text-decoration: none;
+  }
+
+/* .signature {
+    text-align: right;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    
+} */
+
+/* .signature p {
+    font-size: 32px;
+    color: #fbfafb;
+    line-height: 1.3;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-shadow: 5px 8px 5px #e100f18f;
+    margin-top: 0px;
+    margin-bottom: 0px;
+} */
+
+
+/* *************************************************************************** */
+/* ******************************* MEDIA QUERY ******************************* */
+/* *************************************************************************** */
+
+
+
+
+@media screen and (max-width: 980px){
+
+    #senderName {
+        width: 50%;
+    }
+
+   .message {
+       font-size: 24px;
+       color: white;
+       text-shadow: 5px 8px 8px #ffef46ed;
+   }
+
+   .message-box {
+        border-width: 22px;
+        border-radius: 8px;
+        min-height: 250px;
+        padding: 20px;
+        width: 70%;
+   }
+
+   .signature {
+       width: 94%;
+   }
+
+}
+
+@media screen and (max-width: 700px) {
+    #senderName {
+        width: 90%;
+    }
+
+    .close-dialog {
+        font-size: 24px;
+        margin: 24px;
+    }
+
+    .share-dialog-box {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    #senderName {
+        width: 85%;
+        font-size: 16px;
+    }
+    
+    .close-dialog {
+        font-size: 20px;
+        margin: 16px;
+    }
+
+    .message-box {
+        min-height: 200px;
+        border-width: 16px;
+        border-radius: 8px;
+        padding: 16px;
+    }
+
+
+}
+
